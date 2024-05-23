@@ -4,8 +4,7 @@ class User {
   String? password;
   String? token;
 
-  User(
-      {this.name, this.email, this.password, this.token});
+  User({this.name, this.email, this.password, this.token});
 
   User.fromJson(Map<String, dynamic> json) {
     name = json['name'];
